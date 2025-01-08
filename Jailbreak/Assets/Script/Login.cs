@@ -9,6 +9,7 @@ public class Login : MonoBehaviour
 
     public GameObject loginMenuUI;
     public GameObject membershipMenuUI;
+    public GameObject gameStart;
 
     private void Start()
     {
@@ -23,5 +24,10 @@ public class Login : MonoBehaviour
     {
         loginMenuUI.SetActive(false);
         membershipMenuUI.SetActive(true);
+    }
+
+    public void OnButtonclick_Gamestart()
+    {
+        loginMenuUI.SetActive(true);
     }
 }
