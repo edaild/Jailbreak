@@ -35,7 +35,7 @@ public class Login : MonoBehaviour
         if (userId != id || userpw != pw)
         {
             functionUI.SetActive(true);
-            functionText.text = "아이디와 비밀번호를 다시 확인해 주시오.";
+            functionText.text = "아이디와 비밀번호를 확인해 주세요.";
 
             Invoke("HideFunctionText", 3);          // 확인 메세지 비활성화
         }
