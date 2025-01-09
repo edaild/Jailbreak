@@ -25,10 +25,7 @@ public class Login : MonoBehaviour
 
     private void Update()
     {
-        if (logincheck)
-        {
-            
-        }
+
     }
     public void OnButtonClick_LogInButton()     // 로그인 버튼
     {
