@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using Unity.VisualScripting;
+using Unity.Android.Gradle.Manifest;
 public class Login : MonoBehaviour
 {
     // 임시 아이디와 비번
@@ -70,7 +71,9 @@ public class Login : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene("GameScene");            // Game Scene 으로이동
+            functionUI.SetActive(true);
+            functionText.text = "이미 로그인이 되었습니다.";
+            Invoke("HideFunctionText", 3);
         }
     }
        
